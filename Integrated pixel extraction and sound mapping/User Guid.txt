@@ -1,0 +1,34 @@
+Overview-
+The Image Sonification Tool takes an image and maps pixel data to characteristics of sound, such as pitch, volume, and spatial effects. It's useful for exploring visual data through sound or creating artistic audio compositions.
+
+How to Use-
+Run the tool using Python. Make sure all dependencies are installed (see Requirements).
+
+Input Your Image-
+Enter the path to the image file when prompted. The tool supports.png,.jpg, and.npy formats.
+
+Choose Output File-
+Specify an output file location for saving the audio file, e.g. output.wav.
+
+Choose a Sonification Mode-
+Options include four sonification modes:
+1.Brightness modulation of pitch: maps brightness to sound pitch
+2.Color sound effects : RGB values translate to the pitch, volume, and duration of sound
+3.Stereo spatial mapping: Maps pixel positions in stereo onto sound
+4.Harmony sound color: Translates RGB to harmonious chords
+
+Processing the Image-
+The program processes the image and is shown with a progress status for very large files.
+
+Saving the Output-
+The audio file is saved in the specified location as a.wav file.
+
+Best Practices-
+1.Resize large images to improve performance.
+2.Test different modes for creative output
+3.Use headphones or quality speakers to appreciate stereo and harmonics.
+
+Troubleshooting-
+1.File Not Found: Check if the file path is valid.
+2.Memory Errors: Use resized images or smaller cuts for processing.
+3.No Output: Make sure FFmpeg is installed and configured appropriately.

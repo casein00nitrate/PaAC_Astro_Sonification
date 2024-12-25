@@ -1,0 +1,9 @@
+Requirements-
+
+Hardware-
+4 GB RAM (8 GB recommended for high-resolution images).
+A dual-core processor or better.
+
+Software-
+Python (version 3.7 or higher).
+Required Python libraries: numpy, pydub, Pillow, tqdm and FFmpeg for audio export.
