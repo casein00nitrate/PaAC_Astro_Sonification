@@ -4,11 +4,11 @@
  3.	The 'Integrated pixel extraction and sound mapping' includes a Python-based application built to convert visual data derived from images into sound, known as the Image Sonification Tool. The tool uses multiple formats of images supported by.png,.jpg, and.npy files.
 The basis of the tool's work is three sonification modes:
 
-Brightness-based pitch modulation: This mode translates the brightness of every pixel into a corresponding pitch, establishing a direct relation between light intensity and sound.
+ a.Brightness-based pitch modulation: This mode translates the brightness of every pixel into a corresponding pitch, establishing a direct relation between light intensity and sound.
 
-Color-based sound effects: RGB values of every pixel are mapped to frequency (pitch), volume, and duration, creating sound effects based on the color composition of the image.
+ b.Color-based sound effects: RGB values of every pixel are mapped to frequency (pitch), volume, and duration, creating sound effects based on the color composition of the image.
 
-Spatial stereo mapping: Pixel positions are used to create stereo effects, panning sound across the left and right channels based on the horizontal position of the pixel in the image.
+ c.Spatial stereo mapping: Pixel positions are used to create stereo effects, panning sound across the left and right channels based on the horizontal position of the pixel in the image.
 
 The program processes the image pixel by pixel, generating a sound for each. To improve on large images, the rows of pixels are individually processed and the tqdm library is used to display the progress bar. Once an image is processed, generated audio is saved as.wav.
 
